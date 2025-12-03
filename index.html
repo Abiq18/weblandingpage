@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <meta name="description" content="Website landing page modern dan responsif">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">JUMP<span>BOOT</span></div>
+            <div class="loader-circle"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">JUMP<span>BOOT</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#features" class="nav-link">Fitur</a></li>
+                    <li><a href="#services" class="nav-link">Layanan</a></li>
+                    <li><a href="#about" class="nav-link">Tentang</a></li>
+                    <li><a href="#contact" class="nav-link btn-primary">Kontak Kami</a></li>
+                </ul>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <canvas id="hero-particles"></canvas>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <h1 class="hero-title" id="hero-title">Loading...</h1>
+                    <p class="hero-description" id="hero-desc">
+                        Loading...
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Mulai Sekarang</a>
+                        <a href="#features" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal delay-200">
+                    <!-- Placeholder for hero image/illustration -->
+                    <img src="images/hero.png" alt="Digital Agency Illustration" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fitur Unggulan</h2>
+                    <p class="section-subtitle">Kenapa memilih layanan kami?</p>
+                </div>
+                <div class="features-grid" id="features-grid">
+                    <!-- Features will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="section-subtitle">Mengenal JUMPBOOT lebih dekat</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text reveal delay-100">
+                        <p>JUMPBOOT adalah agensi digital yang berfokus pada inovasi dan kualitas. Kami percaya bahwa setiap bisnis memiliki potensi untuk berkembang pesat di era digital.</p>
+                        <p>Dengan tim yang berpengalaman dan berdedikasi, kami siap membantu Anda mewujudkan visi digital Anda melalui solusi teknologi yang tepat guna, estetis, dan fungsional.</p>
+                        <div class="about-stats">
+                            <div class="stat-box">
+                                <h4>5+</h4>
+                                <p>Tahun Pengalaman</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>100+</h4>
+                                <p>Proyek Sukses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image reveal delay-200">
+                        <img src="images/about.png" alt="Tim JUMPBOOT" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Layanan Kami</h2>
+                    <p class="section-subtitle">Solusi lengkap untuk kebutuhan Anda</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal delay-100">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>Pembuatan website profesional dengan teknologi terbaru.</p>
+                        <ul class="service-list">
+                            <li>Landing Page</li>
+                            <li>Company Profile</li>
+                            <li>E-commerce</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-200">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile App</h3>
+                        <p>Aplikasi mobile Android & iOS yang user-friendly.</p>
+                        <ul class="service-list">
+                            <li>UI/UX Design</li>
+                            <li>Native Development</li>
+                            <li>Maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-300">
+                        <div class="service-icon">📈</div>
+                        <h3>Digital Marketing</h3>
+                        <p>Strategi pemasaran digital untuk meningkatkan omset.</p>
+                        <ul class="service-list">
+                            <li>SEO Optimization</li>
+                            <li>Social Media Management</li>
+                            <li>Google Ads</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-100">
+                        <div class="service-icon">🎨</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Desain antarmuka yang menarik dan pengalaman pengguna yang optimal.</p>
+                        <ul class="service-list">
+                            <li>Prototyping</li>
+                            <li>User Research</li>
+                            <li>Wireframing</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-200">
+                        <div class="service-icon">☁️</div>
+                        <h3>Cloud Services</h3>
+                        <p>Solusi cloud yang aman dan skalabel untuk bisnis Anda.</p>
+                        <ul class="service-list">
+                            <li>AWS/GCP/Azure</li>
+                            <li>Cloud Migration</li>
+                            <li>Server Management</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-300">
+                        <div class="service-icon">💼</div>
+                        <h3>IT Consulting</h3>
+                        <p>Konsultasi teknologi untuk transformasi digital perusahaan.</p>
+                        <ul class="service-list">
+                            <li>System Analysis</li>
+                            <li>Tech Roadmap</li>
+                            <li>Security Audit</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="stats" class="stats reveal">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="150">0</h3>
+                    <p>Proyek Selesai</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Klien Puas</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="24">0</h3>
+                    <p>Jam Support</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Paket Harga</h2>
+                    <p class="section-subtitle">Pilih paket yang sesuai dengan kebutuhan Anda</p>
+                </div>
+                <div class="pricing-grid" id="pricing-grid">
+                    <!-- Pricing will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Galeri Portofolio</h2>
+                    <p class="section-subtitle">Karya terbaik kami untuk klien tercinta</p>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Portfolio items will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">FAQ</h2>
+                    <p class="section-subtitle">Pertanyaan yang sering diajukan</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">Berapa lama proses pengerjaan website? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Waktu pengerjaan bervariasi tergantung kompleksitas website. Untuk landing page standar biasanya memakan waktu 3-5 hari kerja.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Apakah ada garansi maintenance? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Ya, kami memberikan garansi maintenance gratis selama 1 bulan setelah website selesai dikerjakan.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Apakah website sudah termasuk hosting dan domain? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Paket kami fleksibel. Anda bisa memilih paket yang sudah termasuk hosting dan domain, atau hanya jasa pembuatan saja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta reveal">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Siap Mengembangkan Bisnis Anda?</h2>
+                    <p>Jangan tunda lagi. Konsultasikan kebutuhan digital Anda bersama kami sekarang juga.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Hubungi Kami Sekarang</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p>Siap untuk memulai proyek Anda? Jangan ragu untuk menghubungi kami.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <p id="contact-address">Loading...</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <p id="contact-email">Loading...</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <p id="contact-phone">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Masukkan email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" rows="5" placeholder="Tuliskan pesan Anda" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>JUMP<span>BOOT</span></h3>
+                <p>Mewujudkan ide brilian Anda menjadi kenyataan digital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Tautan</h4>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Sosial Media</h4>
+                <div class="social-icons">
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                    <a href="#">LI</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JUMPBOOT. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+{
+  "hero": {
+    "title": "Bangun Masa Depan Digital Anda",
+    "description": "Solusi terbaik untuk mengembangkan bisnis Anda dengan teknologi terkini. Desain modern, cepat, dan responsif."
+  },
+  "features": [
+    {
+      "icon": "🚀",
+      "title": "Performa Cepat",
+      "description": "Optimasi maksimal untuk kecepatan loading yang luar biasa."
+    },
+    {
+      "icon": "🎨",
+      "title": "Desain Modern",
+      "description": "Tampilan visual yang memukau dan mengikuti tren terkini."
+    },
+    {
+      "icon": "📱",
+      "title": "Responsif",
+      "description": "Tampil sempurna di semua perangkat, dari desktop hingga mobile."
+    }
+  ],
+  "about": {
+    "text1": "JUMPBOOT adalah agensi digital yang berfokus pada inovasi dan kualitas. Kami percaya bahwa setiap bisnis memiliki potensi untuk berkembang pesat di era digital.",
+    "text2": "Dengan tim yang berpengalaman dan berdedikasi, kami siap membantu Anda mewujudkan visi digital Anda melalui solusi teknologi yang tepat guna, estetis, dan fungsional.",
+    "stats": [
+      {
+        "number": "5+",
+        "label": "Tahun Pengalaman"
+      },
+      {
+        "number": "100+",
+        "label": "Proyek Sukses"
+      }
+    ]
+  },
+  "services": [
+    {
+      "icon": "💻",
+      "title": "Web Development",
+      "description": "Pembuatan website profesional dengan teknologi terbaru.",
+      "list": [
+        "Landing Page",
+        "Company Profile",
+        "E-commerce"
+      ]
+    },
+    {
+      "icon": "📱",
+      "title": "Mobile App",
+      "description": "Aplikasi mobile Android & iOS yang user-friendly.",
+      "list": [
+        "UI/UX Design",
+        "Native Development",
+        "Maintenance"
+      ]
+    },
+    {
+      "icon": "📈",
+      "title": "Digital Marketing",
+      "description": "Strategi pemasaran digital untuk meningkatkan omset.",
+      "list": [
+        "SEO Optimization",
+        "Social Media Management",
+        "Google Ads"
+      ]
+    },
+    {
+      "icon": "🎨",
+      "title": "UI/UX Design",
+      "description": "Desain antarmuka yang menarik dan pengalaman pengguna yang optimal.",
+      "list": [
+        "Prototyping",
+        "User Research",
+        "Wireframing"
+      ]
+    },
+    {
+      "icon": "☁️",
+      "title": "Cloud Services",
+      "description": "Solusi cloud yang aman dan skalabel untuk bisnis Anda.",
+      "list": [
+        "AWS/GCP/Azure",
+        "Cloud Migration",
+        "Server Management"
+      ]
+    },
+    {
+      "icon": "💼",
+      "title": "IT Consulting",
+      "description": "Konsultasi teknologi untuk transformasi digital perusahaan.",
+      "list": [
+        "System Analysis",
+        "Tech Roadmap",
+        "Security Audit"
+      ]
+    }
+  ],
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "Rp 1.5jt",
+      "features": [
+        "Landing Page (1 Halaman)",
+        "Responsive Design",
+        "SEO Dasar",
+        "Revisi 2x"
+      ],
+      "isPopular": false
+    },
+    {
+      "name": "Professional",
+      "price": "Rp 3.5jt",
+      "features": [
+        "Website (Hingga 5 Halaman)",
+        "CMS (Admin Panel)",
+        "SEO Optimization",
+        "Domain & Hosting Gratis (1 Thn)",
+        "Revisi 5x"
+      ],
+      "isPopular": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "Hubungi Kami",
+      "features": [
+        "Custom Web Application",
+        "E-commerce System",
+        "Premium Support 24/7",
+        "Cloud Hosting High Perf.",
+        "Unlimited Revisi"
+      ],
+      "isPopular": false
+    },
+    {
+      "name": "Business",
+      "price": "Rp 5.5jt",
+      "features": [
+        "Website (Hingga 10 Halaman)",
+        "E-commerce Basic",
+        "Priority Support",
+        "Monthly Maintenance",
+        "SEO Advanced"
+      ],
+      "isPopular": false
+    },
+    {
+      "name": "Corporate",
+      "price": "Rp 8.5jt",
+      "features": [
+        "Unlimited Pages",
+        "Full E-commerce",
+        "Dedicated Server",
+        "24/7 Priority Support",
+        "Custom Integrations"
+      ],
+      "isPopular": false
+    },
+    {
+      "name": "Ultimate",
+      "price": "Rp 12jt",
+      "features": [
+        "Everything in Corporate",
+        "Mobile App (Android/iOS)",
+        "AI Chatbot Integration",
+        "Annual Audit",
+        "Lifetime Warranty"
+      ],
+      "isPopular": false
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Desain Antarmuka Website (UI/UX)",
+      "category": "Web Development",
+      "image": "images/portfolio-1.png"
+    },
+    {
+      "title": "Website E-commerce (Toko Online)",
+      "category": "UI/UX Design",
+      "image": "images/portfolio-2.png"
+    },
+    {
+      "title": "Aplikasi Web Berbasis Layanan (SaaS)",
+      "category": "Web Design",
+      "image": "images/portfolio-3.png"
+    }
+  ],
+  "contact": {
+    "address": "Jl. Monokorobo,no12,jakarta selatan",
+    "email": "info@jumpboot.com",
+    "phone": "+62 812 3456 7890"
+  }
+}

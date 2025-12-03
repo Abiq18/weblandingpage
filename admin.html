@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - JUMPBOOT</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="logo">JUMP<span>BOOT</span></a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#hero" class="active"><span class="nav-icon">🏠</span> Hero</a></li>
+            <li class="nav-item"><a href="#about"><span class="nav-icon">ℹ️</span> Tentang</a></li>
+            <li class="nav-item"><a href="#features"><span class="nav-icon">✨</span> Fitur</a></li>
+            <li class="nav-item"><a href="#services"><span class="nav-icon">🛠️</span> Layanan</a></li>
+            <li class="nav-item"><a href="#pricing"><span class="nav-icon">💰</span> Harga</a></li>
+            <li class="nav-item"><a href="#portfolio"><span class="nav-icon">🖼️</span> Portofolio</a></li>
+            <li class="nav-item"><a href="#contact"><span class="nav-icon">📞</span> Kontak</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <button class="btn-logout">
+                <span class="nav-icon">🚪</span> Keluar
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="top-bar">
+            <div class="page-title">
+                <h1>Dashboard</h1>
+                <p>Kelola konten website Anda dengan mudah.</p>
+            </div>
+            <a href="/" target="_blank" class="btn-view-site">Lihat Website ↗</a>
+        </div>
+
+        <form id="adminForm">
+            <!-- Hero Section -->
+            <div id="hero" class="form-section">
+                <div class="section-header">
+                    <h3>Hero Section</h3>
+                </div>
+                <div class="form-group">
+                    <label>Judul Utama</label>
+                    <input type="text" id="heroTitle" name="hero.title">
+                </div>
+                <div class="form-group">
+                    <label>Deskripsi</label>
+                    <textarea id="heroDesc" name="hero.description" rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div id="about" class="form-section">
+                <div class="section-header">
+                    <h3>Tentang Kami</h3>
+                </div>
+                <div class="form-group">
+                    <label>Paragraf 1</label>
+                    <textarea id="aboutText1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Paragraf 2</label>
+                    <textarea id="aboutText2" rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div id="features" class="form-section">
+                <div class="section-header">
+                    <h3>Fitur Unggulan</h3>
+                </div>
+                <div id="featuresContainer" class="form-grid">
+                    <!-- Will be populated by JS -->
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div id="services" class="form-section">
+                <div class="section-header">
+                    <h3>Layanan</h3>
+                </div>
+                <div id="servicesContainer" class="form-grid">
+                    <!-- Will be populated by JS -->
+                </div>
+            </div>
+
+            <!-- Pricing Section -->
+            <div id="pricing" class="form-section">
+                <div class="section-header">
+                    <h3>Paket Harga</h3>
+                </div>
+                <div id="pricingContainer" class="form-grid">
+                    <!-- Will be populated by JS -->
+                </div>
+            </div>
+
+            <!-- Portfolio Section -->
+            <div id="portfolio" class="form-section">
+                <div class="section-header">
+                    <h3>Portofolio</h3>
+                </div>
+                <div id="portfolioContainer" class="form-grid">
+                    <!-- Will be populated by JS -->
+                </div>
+                <button type="button" id="addPortfolioBtn" class="btn-add">+ Tambah Portofolio Baru</button>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="form-section">
+                <div class="section-header">
+                    <h3>Kontak</h3>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Alamat</label>
+                        <input type="text" id="contactAddress" name="contact.address">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="contactEmail" name="contact.email">
+                    </div>
+                    <div class="form-group">
+                        <label>Telepon</label>
+                        <input type="text" id="contactPhone" name="contact.phone">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Save Bar -->
+            <div class="save-bar">
+                <button type="submit" class="btn-save">Simpan Perubahan</button>
+            </div>
+        </form>
+    </main>
+
+    <div id="toast" class="toast">Perubahan berhasil disimpan!</div>
+
+    <script src="admin.js"></script>
+    <script>
+        // Simple script for active nav link highlighting
+        const navLinks = document.querySelectorAll('.nav-item a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('.form-section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
